@@ -2,7 +2,7 @@
     "version": "8.14.2",
     "description": "a remote desktop client to access your devices remotely",
     "homepage": "https://www.nomachine.com/",
-    "license": "https://www.nomachine.com/licensing-4",
+    "license": "https://www.nomachine.com/licensing-9",
     "architecture": {
         "64bit": {
             "url": "https://download.nomachine.com/download/8.14/Windows/nomachine_8.14.2_2_x64.exe",
@@ -23,7 +23,7 @@
             "bin\\nxplayer.exe",
             "NoMachine Service",
             "--dialog status"
-        ],
+        ]
     ],
     "checkver": "Windows - ([\\d.]+)",
     "autoupdate": {
@@ -45,4 +45,3 @@
         }
     }
 }
-
