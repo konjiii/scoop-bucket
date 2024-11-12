@@ -12,5 +12,6 @@
             "url": "https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Windows-Release-x86.zip",
             "hash": "0dfb3b27359e721d2bb0637d9f64b3b21f35786c97a8f20eb19104eb40d270d4"
         }
-    }
+    },
+    "checkver": "Skia-(m[\\d.]+)"
 }
