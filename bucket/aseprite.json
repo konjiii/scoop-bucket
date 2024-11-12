@@ -38,5 +38,6 @@
             "aseprite.exe",
             "Aseprite"
         ]
-    ]
+    ],
+    "checkver": "Aseprite (v[\\d.]+)"
 }
