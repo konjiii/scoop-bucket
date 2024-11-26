@@ -35,7 +35,16 @@
         "converters\\sixel2png.exe"
     ],
     "checkver": {
-        "url": "https://github.com/saitoha/libsixel/releases",
-        "regex": ">(v[\\d.]+).*<"
+        "github": "https://github.com/saitoha/libsixel"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz",
+            },
+            "32bit": {
+                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz",
+            }
+        }
     }
 }

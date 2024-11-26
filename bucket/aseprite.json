@@ -40,7 +40,14 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/aseprite/aseprite/releases",
-        "regex": ">Aseprite (v[\\d.]+.*)<"
+        "github": "https://github.com/aseprite/aseprite",
+        "regex": "Aseprite v([\\d.]+-?[a-z0-9]*)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/aseprite/aseprite/releases/download/v$version/Aseprite-v$version-Source.zip",
+            }
+        }
     }
 }
