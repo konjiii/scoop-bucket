@@ -1,18 +1,18 @@
 {
-    "version": "v1.3.9.1",
+    "version": "1.3.11-beta2",
     "description": "Animated sprite editor & pixel art tool",
     "homepage": "https://github.com/aseprite/aseprite",
     "license": "https://github.com/aseprite/aseprite/blob/main/EULA.txt",
     "notes": "As per the EULA, binaries built using this scoop package cannot be distributed.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aseprite/aseprite/releases/download/v1.3.9.1/Aseprite-v1.3.9.1-Source.zip",
-            "hash": "c4abfc90abcabd2971704d0b57abcf183e48c8932c11998c59122a491e2c686c"
+            "url": "https://github.com/aseprite/aseprite/releases/download/v1.3.11-beta2/Aseprite-v1.3.11-beta2-Source.zip",
+            "hash": "c2dd1753511b85ae3b5253202d1a9e67dca291711047d2019e3bb0f9d257d520"
         }
     },
-    "pre_install": [
-        "scoop install aseprite-skia",
-        "scoop install vswhere"
+    "depends": [
+        "aseprite-skia",
+        "vswhere"
     ],
     "installer": {
         "script": [
@@ -29,10 +29,6 @@
             "cd $currPath"
         ]
     },
-    "post_install": [
-        "scoop uninstall aseprite-skia --purge",
-        "scoop uninstall vswhere --purge"
-    ],
     "shortcuts": [
         [
             "aseprite.exe",
@@ -46,7 +42,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/aseprite/aseprite/releases/download/v$version/Aseprite-v$version-Source.zip",
+                "url": "https://github.com/aseprite/aseprite/releases/download/v$version/Aseprite-v$version-Source.zip"
             }
         }
     }

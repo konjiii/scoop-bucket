@@ -1,5 +1,5 @@
 {
-    "version": "v1.8.6",
+    "version": "1.8.6",
     "description": "A SIXEL encoder/decoder implementation derived from kmiya's sixel",
     "homepage": "https://github.com/saitoha/libsixel",
     "license": "MIT",
@@ -40,10 +40,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz",
+                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz"
             },
             "32bit": {
-                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz",
+                "url": "https://github.com/saitoha/libsixel/releases/download/v$version/libsixel-$version.tar.gz"
             }
         }
     }
