@@ -39,5 +39,8 @@
             "Aseprite"
         ]
     ],
-    "checkver": "Aseprite (v[\\d.]+)"
+    "checkver": {
+        "url": "https://github.com/aseprite/aseprite/releases",
+        "regex": ">Aseprite (v[\\d.]+.*)<"
+    }
 }
