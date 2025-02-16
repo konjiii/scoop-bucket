@@ -17,7 +17,7 @@
     "installer": {
         "script": [
             "$vspath=vswhere -version \"[17.0,18.0)\" -products * -requires Microsoft.Component.MSBuild -property installationPath",
-            "if (!$vspath) {scoop uninstall aseprite --purge; scoop uninstall aseprite-skia --purge; scoop uninstall vswhere --purge; throw \"missing dependency (visual studio 2022) please install visual studio 2022 for c++ development\"}",
+            "if (!$vspath) {scoop uninstall aseprite; throw \"missing dependency (visual studio 2022) please install visual studio 2022 for c++ development\"}",
             "if ($env:SCOOP) { $skiapath=\"$env:SCOOP\\apps\\aseprite-skia\\current\" } else { $skiapath=\"$env:USERPROFILE\\scoop\\apps\\aseprite-skia\\current\" }",
             "cmd.exe /k \"`\"$vspath\\VC\\Auxiliary\\Build\\vcvars64.bat`\" & cd /d $dir & mkdir build & cd build & cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLAF_BACKEND=skia -DSKIA_DIR=$skiapath -DSKIA_LIBRARY_DIR=$skiapath\\out\\Release-x64 -DSKIA_LIBRARY=$skiapath\\out\\Release-x64\\skia.lib -G Ninja .. & ninja aseprite & exit\"",
             "$currPath=pwd",
