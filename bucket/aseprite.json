@@ -31,8 +31,8 @@
             "$currPath=pwd",
             "cd $dir",
             "if ($dir -eq (Get-Location).Path) { Get-ChildItem -Path . -Force | Where-Object { $_.Name -ne \"build\" } | Remove-Item -Recurse -Force } else { throw \"Path was not updated successfully to $dir, please try again\" }",
-            "mv build\\bin\\aseprite.exe .",
-            "mv build\\bin\\data .",
+            "Move-Item build\\bin\\aseprite.exe .",
+            "Move-Item build\\bin\\data .",
             "Remove-Item -Recurse -Force build",
             "cd $currPath"
         ]
