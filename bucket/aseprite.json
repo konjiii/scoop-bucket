@@ -40,8 +40,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/aseprite/aseprite/tags",
-        "regex": "/aseprite/aseprite/releases/tag/v([\\d.]+)\""
+        "github": "https://github.com/aseprite/aseprite",
+        "regex": "/releases/tag/v([\\d.]+)\""
     },
     "autoupdate": {
         "architecture": {
